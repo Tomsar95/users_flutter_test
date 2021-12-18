@@ -23,7 +23,7 @@ class _UserAppBarState extends State<UserAppBar> {
     return AppBar(
       title: Text(
         UILabels.mainTitle,
-        style: UserTextStyles.robotoRegular().copyWith(fontSize: 20, color: UserColors.white),
+        style: UserTextStyles.robotoRegular().copyWith(color: UserColors.white, fontSize: 18),
       ),
       backgroundColor: UserColors.principal,
       elevation: 0,

@@ -27,7 +27,7 @@ class UserTextStyles {
   static TextStyle robotoLight()=>
       _baseFont.copyWith(
           fontWeight: FontWeight.w300,
-          fontSize: 15,
+          fontSize: 18,
           color: UserColors.darkGray);
 
 
@@ -40,6 +40,6 @@ class UserTextStyles {
 
   static TextStyle buttonTextStyle = _baseFont.copyWith(color: Colors.white);
 
-  static TextStyle errorLabelStyle = _baseFont.copyWith(color: UserColors.error, fontSize: 15);
+  static TextStyle errorLabelStyle = _baseFont.copyWith(color: UserColors.error, fontSize: 16);
 
 }

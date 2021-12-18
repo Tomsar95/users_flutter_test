@@ -26,6 +26,7 @@ class _MainUsersScreenState extends State<MainUsersScreen> {
     _searchController = TextEditingController();
     usersBloc = UsersBloc();
     usersBloc.add(LoadDataUserEvent());
+    super.initState();
   }
 
   @override
@@ -45,6 +46,7 @@ class _MainUsersScreenState extends State<MainUsersScreen> {
   }
 
   void userTileTapped(String userId) {
+    FocusScope.of(context).unfocus();
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => UserPostsScreen(userId: userId)),
@@ -132,12 +134,13 @@ class EmptyResultsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Text(
           MessagesLabels.empty,
           textAlign: TextAlign.center,
+          style: UserTextStyles.robotoRegular(),
         ),
       ),
     );
@@ -151,13 +154,12 @@ class ErrorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Text(
-          MessagesLabels.fetchError,
-          textAlign: TextAlign.center,
-        ),
+        padding: const EdgeInsets.all(16.0),
+        child: Text(MessagesLabels.fetchError,
+            textAlign: TextAlign.center,
+            style: UserTextStyles.robotoRegular()),
       ),
     );
   }
