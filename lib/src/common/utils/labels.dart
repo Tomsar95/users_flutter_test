@@ -1,11 +1,11 @@
 class UILabels {
   static const String mainTitle = 'Prueba de Ingreso';
-  static const String searchHint = 'Busca un usuario';
+  static const String searchHint = 'Buscar usuario';
 }
 
 class MessagesLabels {
-  static const String fetchError = 'Lo sentimos, ocurrió un error cargando los datos, por favor intente de nuevo';
-  static const String empty = 'Lo sentimos, no encontramos resultados para su búsqueda';
+  static const String fetchError = 'Sorry... There was an error, please try again later';
+  static const String empty = 'List is empty';
 }
 
 class ButtonLabels {

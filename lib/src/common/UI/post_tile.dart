@@ -35,7 +35,7 @@ class _PostTileState extends State<PostTile> {
               Text(
                 widget.index.toString() + '. ' + widget.post.title,
                 style: UserTextStyles.robotoBold()
-                    .copyWith(color: UserColors.principal, fontSize: 20),
+                    .copyWith(color: UserColors.principal),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),

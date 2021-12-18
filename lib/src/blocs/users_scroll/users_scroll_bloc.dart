@@ -29,7 +29,7 @@ class UsersBloc extends Bloc<UsersEvent,UsersState> {
           yield OnErrorFetchingUsersState();
         }
       }else{
-        var users = GlobalVariables.usersData;
+        users = GlobalVariables.usersData;
         yield OnFetchedUsersState(users);
       }
     }

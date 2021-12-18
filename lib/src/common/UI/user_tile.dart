@@ -36,7 +36,7 @@ class _UserTileState extends State<UserTile> {
               Text(
                 widget.user.name,
                 style: UserTextStyles.robotoBold()
-                    .copyWith(color: UserColors.principal, fontSize: 20),
+                    .copyWith(color: UserColors.principal),
               ),
               Row(
                 children: [
